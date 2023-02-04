@@ -9,27 +9,36 @@
 </head>
 <body>
    <div class="wrapper">
-         <div class="calc__pecent">
-            <div class="title">
-               <p>Калькулятор расчета</p>
-               <p>процентов</p>
-            </div>
-            <div class="value__summ value">
-               <input type="text" id="valueSumm" class="value-input value__item" placeholder="Сумма для рассчета"/>
-            </div>
-            <div class="value__pecent value">
-               <input type="text" id="valuePecent" class="value-input value__item" placeholder="Сколько процентов годовых" />
-            </div>
-            <div class="value__interval value">
-               <input type="text" id="valueInterval" class="value-input value__item" placeholder="Количество дней" />
-            </div>
-            <div class="value__button value">
-               <button class="buttom__count value__item" onclick="showPecent()"><span>Рассчитать</span></button>
-            </div>
-            <div class="value__result value">
-               <p class="result__summ value__item" id="resultSumm"> </p>
-            </div>
+      <div class="calc__item">
+         <div class="calc__item-box">
+            <input type="text" class="someclass" placeholder="базовая ставка премии" id="basePremiumRate">
          </div>
+         <div class="calc__item-box">
+            <input type="text" class="someclass" placeholder="KPI Качества" id="kpiKachestva">
+         </div>
+         <div class="calc__item-box">
+            <input type="text" class="someclass" placeholder="KPI Сглаживания" id="kpiSglaschivaniya">
+         </div>
+         <div class="calc__item-box">
+            <input type="text" class="someclass"
+            placeholder="Балл за Тайного клиента" id="tainiKlient">
+         </div>
+         <div class="calc__item-box">
+            <input type="text" class="someclass" placeholder="Бонус за CSAT" id="csat">
+         </div>
+         <div class="calc__item-box">
+            <input type="text" class="someclass" placeholder="Бонус за Решение вопроса" id="reshenieVoprosa">
+         </div>
+         <div class="calc__item-box">
+            <input type="text" class="someclass" placeholder="Бонус за Трансферы" id="transfer">
+         </div>
+         <div class="calc__item-box">
+            <button onclick="count()"><span>Рассчитать</span></button>
+         </div>
+         <div class="calc__item-box">
+            <p class="result" id="resultPrem">Ваши копиички</p>
+         </div>
+      </div>
    </div>
    <script src="js/script.js"></script>
 </body>
